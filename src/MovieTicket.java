@@ -10,6 +10,7 @@ class MovieTickets {
     }
 
     double calculateTotal(){
+
         return seats*ratePerTicket ;
     }
 
