@@ -25,6 +25,10 @@
         System.out.println("StudentGrade:" + calculateGrade());
 
     }
+    void studentResult(String message) {
+        System.out.println(message);
+        studentResult(); // call the original method
+    }
 
 }
 
@@ -33,6 +37,7 @@ public class StudentRanker {
         Student s1 = new Student("Namitha",85 );
         s1.studentResult();
         System.out.println();
+        s1.studentResult("Displaying Student Info");
 
 
     }
